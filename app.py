@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from transformers import pipeline
 @st.cache_resource
-def load_model()
+def load_model():
     return pipeline("sentiment-analysis")
 nlp=load_model()
 st.set_page_config(page_title="Sentiment Analytics Dashboard", layout="wide")
@@ -60,4 +60,5 @@ if st.session_state.results:
 st.markdown("---")
 st.markdown("<p style='text-align:center;color:gray;'>© 2025 Sentiment Analytics Dashboard</p>", unsafe_allow_html=True)
 st.set_page_config(page_title="Sentiment Dashboard", page_icon="💬", layout="wide")
+
 

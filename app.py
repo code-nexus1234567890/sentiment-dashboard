@@ -18,7 +18,7 @@ st.markdown("""
     footer {visibility: hidden;}
 </style>
 """, unsafe_allow_html=True)
-st.markdown("<h1 style='color:#2E86C1;'>Swnti,ent Analytics Dashboard</h1>",unsafe_allow_html=True)
+st.markdown("<h1 style='color:#2E86C1;'>Sentiment Analytics Dashboard</h1>",unsafe_allow_html=True)
 st.write("Analyze text sentiment in real-time with clean analytics")
 st.markdown("---")
 user_input=st.text_area("Enter text to analyze sentiment:",height=150)
@@ -60,5 +60,6 @@ if st.session_state.results:
 st.markdown("---")
 st.markdown("<p style='text-align:center;color:gray;'>© 2025 Sentiment Analytics Dashboard</p>", unsafe_allow_html=True)
 st.set_page_config(page_title="Sentiment Dashboard", page_icon="💬", layout="wide")
+
 
 
